@@ -135,7 +135,7 @@ if (recipe) {
 
     // Create another element for the amount & apply classes
     const elAmount = document.createElement('span');
-    elAmount.className = 'badge badge-primary badge-pill';
+    elAmount.className = 'badge badge-secondary badge-pill';
 
     // Since the amount is nested inside of the ingredient element, we first
     // set the innerHTML of the amount
