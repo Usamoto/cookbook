@@ -1,11 +1,5 @@
 
-.image2 {
-    opacity: 1;
-    display: relative;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
+
   .middle {
     transition: .5s ease;
     opacity: 0;
@@ -24,11 +18,11 @@
     font-size: 20px
   }
   
-  .container:hover .image {
+  .image:hover .img {
     opacity: 0.3;
   }
   
-  .container:hover .middle {
+  .image:hover .middle {
     opacity: 1;
     color: black;
   }
