@@ -1,202 +1,404 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cook Book</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" /> -->
-    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/minty/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body id="pagetop">
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="#">Recipify</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container">
+        <a class="navbar-brand" href="#pagetop">Recipify</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#antipasto">Antipasto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#primo">Primo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#secondo">Secondo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#dolce">Dolce</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#antipasto">Antipasto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#primo">Primo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#secondo">Secondo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dolce">Dolce</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-
     <main class="container">
-        <div id="antipasto" class="py-3"></div>
-        <h2 class="mb-4 text-center text-primary">Antipasto</h2>
-        <div class="d-flex flex-wrap">
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div id="antipasto" class="py-3"></div>
 
-        <div id="primo" class="py-5"></div>
-        <h2 class="mb-4 text-center text-primary">Primo</h2>
-        <div class="d-flex flex-wrap mb-5">
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <!-- ANTIPASTO RECIPES -->
 
-
-        <div id="secondo" class="py-5"></div>
-        <h2 class="mb-4 text-center text-primary">Secondo</h2>
-        <div class="d-flex flex-wrap mb-5">
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
+      <h2 class="mb-4 text-center text-secondary">Antipasto</h2>
+      <div class="d-flex flex-wrap">
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=vitellotonnato">
+                  Vitello Tonnato
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/antiVit.jpg"
+                  alt="Vitello Tonnato"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <div id="dolce" class="py-5"></div>
-        <h2 class="mb-4 text-center text-primary">Dolce</h2>
-        <div class="d-flex flex-wrap mb-5">
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=mozzarellacaprese">
+                  Mozzarella Caprese
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/antiMoz.jpg"
+                  alt="Mozzarella Caprese"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <h4 class="card-title">Recipe Title</h4>
-                        <img src="https://picsum.photos/700" alt="Recipe Image" class="rounded img-fluid" />
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="py-5"></div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=prosciuttomelone">
+                  Prosciutto Melone
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/antiProci.jpg"
+                  alt="Prosciutto Melone"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRIMO RECIPES -->
+
+      <div id="primo" class="py-5"></div>
+      <h2 class="mb-4 text-center text-secondary">Primo</h2>
+      <div class="d-flex flex-wrap mb-5">
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=tagliatelle">
+                  Taglietelle Al Tartufo
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/primTag.jpg"
+                  alt="Taglietelle Al Tartufo"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=risotto">
+                  Risotto Con Calamari
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/primRisso.jpg"
+                  alt="Risotto Con Calamari"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=spaghettibolognese">
+                  Spaghetti Bolognese
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/priSpag.jpg"
+                  alt="Spaghetti Bolognese"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECONDO RECIPES -->
+
+      <div id="secondo" class="py-5"></div>
+      <h2 class="mb-4 text-center text-secondary">Secondo</h2>
+      <div class="d-flex flex-wrap mb-5">
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=filetto">
+                  Filetto Di Maiale
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/secFil.jpg"
+                  alt="Filetto Di Maiale Ai Funghi"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=milanese">
+                  Milanese
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/secMil.jpg"
+                  alt="Milanese"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=branzino">
+                  Branzino Al Sale
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/secBran.jpg"
+                  alt="Branzino Al Sale"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOLCE RECIPES -->
+
+      <div id="dolce" class="py-5"></div>
+      <h2 class="mb-4 text-center text-secondary">Dolce</h2>
+      <div class="d-flex flex-wrap mb-5">
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=tiramisu">
+                  Tiramisu
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/dolcTirami.jpg"
+                  alt="Tiramisu"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=pannacotta">
+                  Panna Cotta
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/dolcCotta.jpg"
+                  alt="Panna Cotta"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="recipe.html?recipe=semifreddo">
+                  Semifreddo Al Bergamotto
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="Images/dolcsem.jpg"
+                  alt="Semifreddo Al Bergamotto"
+                  class="rounded img img-responsive full-width"
+                />
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5"></div>
     </main>
     <footer class="navbar navbar-dark bg-dark text-white py-4">
-        <div class="container">
-            <small class="col text-right">
-                Group 2: Bruno, Ourania, Joss
-            </small>
-        </div>
+      <div class="container">
+        <small class="col text-right">
+          Group 2: Bruno, Ourania, Joss
+        </small>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

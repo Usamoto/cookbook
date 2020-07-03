@@ -165,7 +165,7 @@ const recipes = [
     </p>`
   },
   {
-    slug: 'Branzino',
+    slug: 'branzino',
     title: 'Branzino Al Sale',
     category: 'Secondo',
     image: 'https://picsum.photos/1000/700',
