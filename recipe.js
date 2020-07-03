@@ -11,7 +11,7 @@ const recipes = [
     category: 'Antipasto',
     description:
       "I love cheese, especially dolcelatte port-salut. Cheesy feet macaroni cheese cut the cheese when the cheese comes out everybody's happy halloumi say cheese say cheese blue castello.",
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/antiVit.jpg',
     ingredients: [
       ['Ingredient One', '3 cups'],
       ['Ingredient Two', '2 spoons'],
@@ -32,7 +32,7 @@ const recipes = [
     category: 'Antipasto',
     description:
       'I love cheese, especially cheese and wine stilton. Bocconcini chalk and cheese fromage frais say cheese pepper jack monterey jack cottage cheese bavarian.',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/antiMoz.jpg',
     ingredients: [
       ['Ingredient One', '3 cups'],
       ['Ingredient Two', '2 spoons'],
@@ -51,7 +51,7 @@ const recipes = [
     category: 'Antipasto',
     description:
       'I love cheese, especially cheesy feet macaroni cheese. The big cheese fromage frais cheese and wine swiss rubber cheese hard cheese halloumi mozzarella.',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/antiProci.jpg',
     ingredients: [
       ['Ingredient One', '3 cups'],
       ['Ingredient Two', '2 spoons'],
@@ -68,7 +68,7 @@ const recipes = [
     slug: 'tagliatelle',
     title: 'Taglietelle Al Tartufo',
     category: 'Primo',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/primTag.jpg',
     description:
       'I love cheese, especially fromage cheddar. Danish fontina who moved my cheese cream cheese pecorino cow queso melted cheese goat.',
     ingredients: [
@@ -88,7 +88,7 @@ const recipes = [
     slug: 'risotto',
     title: 'Risotto Con Calamari',
     category: 'Primo',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/primRisso.jpg',
     description:
       'I love cheese, especially cream cheese everyone loves. Port-salut parmesan queso cheesecake port-salut monterey jack caerphilly lancashire.',
     ingredients: [
@@ -108,7 +108,7 @@ const recipes = [
     slug: 'spaghettibolognese',
     title: 'Spaghetti Bolognese',
     category: 'Primo',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/priSpag.jpg',
     description:
       'I love cheese, especially edam swiss. Stilton croque monsieur cheese and wine bocconcini say cheese blue castello roquefort babybel.',
     ingredients: [
@@ -128,7 +128,7 @@ const recipes = [
     slug: 'filetto',
     title: 'Filetto Di Maiale Ai Funghi',
     category: 'Secondo',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/secFil.jpg',
     description:
       'I love cheese, especially bavarian bergkase ricotta. Airedale dolcelatte roquefort port-salut red leicester squirty cheese emmental edam.',
     ingredients: [
@@ -148,7 +148,7 @@ const recipes = [
     slug: 'milanese',
     title: 'Milanese',
     category: 'Secondo',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/secMil.jpg',
     description:
       'I love cheese, especially cottage cheese bavarian bergkase. Croque monsieur camembert de normandie hard cheese chalk and cheese ricotta fromage the big cheese jarlsberg.',
     ingredients: [
@@ -168,7 +168,7 @@ const recipes = [
     slug: 'branzino',
     title: 'Branzino Al Sale',
     category: 'Secondo',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/secBran.jpg',
     description:
       'I love cheese, especially airedale cheesecake. Fondue blue castello cheese on toast cottage cheese pecorino cheesecake cut the cheese croque monsieur.',
     ingredients: [
@@ -188,7 +188,7 @@ const recipes = [
     slug: 'tiramisu',
     title: 'Tiramisu',
     category: 'Dolce',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/dolcTirami.jpg',
     description:
       'I love cheese, especially cream cheese fromage frais. Chalk and cheese taleggio cheeseburger who moved my cheese stilton cheese strings cheesy grin halloumi.',
     ingredients: [
@@ -208,7 +208,7 @@ const recipes = [
     slug: 'pannacotta',
     title: 'Panna Cotta',
     category: 'Dolce',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/dolcCotta.jpg',
     description:
       'I love cheese, especially airedale red leicester. Red leicester ricotta cheese triangles bavarian bergkase emmental jarlsberg mascarpone st. agur blue cheese.',
     ingredients: [
@@ -228,7 +228,7 @@ const recipes = [
     slug: 'semifreddo',
     title: 'Semifreddo Al Bergamotto',
     category: 'Dolce',
-    image: 'https://picsum.photos/1000/700',
+    image: 'Images/dolcsem.jpg',
     description:
       'I love cheese, especially brie st. agur blue cheese. Taleggio pecorino brie edam cheese and wine fromage frais cheesecake cream cheese.',
     ingredients: [
