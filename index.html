@@ -511,9 +511,19 @@
                 id="share-link"
                 value=""
               />
-              <button type="button" class="btn btn-outline-primary">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="copyToClipboard()"
+              >
                 Copy
               </button>
+            </div>
+            <div
+              id="clipboard-message"
+              class="alert alert-light text-center text-black-50 hide"
+            >
+              Copied the link to your clipboard
             </div>
           </div>
           <div class="modal-footer">
