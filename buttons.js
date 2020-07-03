@@ -23,6 +23,26 @@ function showShareModal(slug) {
 
   // Now we drop the URL into the input field in the Modal
   document.getElementById('share-link').setAttribute('value', shareUrl);
+
+  // Finally, we apply the link to the social network icons.
+  // Pinterest
+  document
+    .getElementById('share-pinterest')
+    .setAttribute(
+      'href',
+      `https://pinterest.com/pin/create/button/?url=${shareUrl}&media=&description=`
+    );
+  // Facebook
+  document
+    .getElementById('share-facebook')
+    .setAttribute(
+      'href',
+      `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`
+    );
+  // Mail
+  document
+    .getElementById('share-mail')
+    .setAttribute('href', `mailto:info@example.com?&subject=&body=${shareUrl}`);
 }
 
 // We also need a function to hide the Modal, once the user closes it
@@ -32,6 +52,11 @@ function hideModal() {
 
   // Just to be thorough, we also empty the value attribute of the input inside of the Modal, so it doesn't linger in the markup
   document.getElementById('share-link').setAttribute('value', '');
+
+  // We should also reset the href attributes on the share buttons
+  document.getElementById('share-pinterest').setAttribute('href', '');
+  document.getElementById('share-facebook').setAttribute('href', '');
+  document.getElementById('share-mail').setAttribute('href', '');
 
   // And we also set the clipboard-message to be hidden (see function below)
   document.getElementById('clipboard-message').classList.add('hide');
