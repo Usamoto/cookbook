@@ -259,10 +259,17 @@ const elImage = document.getElementById('el-image');
 const elIngredients = document.getElementById('el-ingredients');
 const elInstructions = document.getElementById('el-instructions');
 
+// We also need the navigation items as elements in our JS,
+// so we can add the "active"-class to the category we're looking at
+const navAntipasto = document.getElementById('nav-antipasto');
+const navPrimo = document.getElementById('nav-primo');
+const navSecondo = document.getElementById('nav-secondo');
+const navDolce = document.getElementById('nav-dolce');
+
 // We look through the data array to get the recipe data we need
 const recipe = recipes.filter((item) => item.slug == query)[0];
 
-// Before applying all the data to the page, we need to check if the query query actually relates to something in our data
+// Before applying all the data to the page, we need to check if the query actually relates to something in our data
 // If it does, we keep going
 if (recipe) {
   // First we set all the simple elements
@@ -276,6 +283,24 @@ if (recipe) {
   // And also the alt-text
   elImage.setAttribute('src', recipe.image);
   elImage.setAttribute('alt', recipe.title);
+
+  // Next, we do the navigation. We want to highlight the button that relates
+  // to the category we are looking at right now. So we need to go through
+  // the possible values and then apply the "active"-class when we find a match.
+  switch (recipe.category) {
+    case 'Antipasto':
+      navAntipasto.classList.add('active');
+      break;
+    case 'Primo':
+      navPrimo.classList.add('active');
+      break;
+    case 'Secondo':
+      navSecondo.classList.add('active');
+      break;
+    case 'Dolce':
+      navDolce.classList.add('active');
+      break;
+  }
 
   // Finally, we need to generate the ingredients list
   // First we define a function that appends a list item to the list on the page.
