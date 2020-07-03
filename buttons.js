@@ -89,6 +89,6 @@ function copyToClipboard() {
 
   // Finally, we tell the user that we copied the value to their clipboard.
   // For that, we have a message in our markup that is hidden by default.
-  // We simply remove the "hide"-class.
+  // We simply remove the "hide"-class of it.
   document.getElementById('clipboard-message').classList.remove('hide');
 }
