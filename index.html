@@ -85,6 +85,20 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="loadRecipe('vitellotonnato')"
+              >
+                Read
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="showShareModal('vitellotonnato')"
+              >
+                Share
+              </button>
             </div>
           </div>
         </div>
@@ -474,7 +488,7 @@
     </footer>
 
     <!-- MODAL ELEMENT FOR SHARE BUTTON -->
-    <div class="cb-modal-container">
+    <div class="cb-modal-container hide">
       <div class="cb-modal-wrapper">
         <div class="modal-content">
           <div class="modal-header">
@@ -484,6 +498,7 @@
               class="close"
               data-dismiss="modal"
               aria-label="Close"
+              onclick="hideModal()"
             >
               <span aria-hidden="true">&times;</span>
             </button>
@@ -493,7 +508,7 @@
               <input
                 type="text"
                 class="form-control mr-1"
-                id="shareLink"
+                id="share-link"
                 value=""
               />
               <button type="button" class="btn btn-outline-primary">
@@ -502,7 +517,11 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary d-block mx-auto">
+            <button
+              type="button"
+              class="btn btn-secondary d-block mx-auto"
+              onclick="hideModal()"
+            >
               Thanks!
             </button>
           </div>
@@ -525,6 +544,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="share.js"></script>
+    <script src="buttons.js"></script>
   </body>
 </html>
