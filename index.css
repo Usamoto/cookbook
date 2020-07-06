@@ -1,4 +1,32 @@
 /*
+ *  SVG BACKGROUND: KITCHEN 
+ */
+.background-svg {
+  background: url('kitchen.svg') no-repeat;
+  background-size: 500px;
+  opacity: 0.2;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  z-index: -100;
+  bottom: 0;
+  right: 50px;
+}
+
+@media only screen and (max-width: 770px) {
+  .background-svg {
+    display: none;
+  }
+}
+
+/* 
+ *  HEADER
+ */
+.header-svg {
+  margin-right: 10px;
+}
+
+/*
  *  RECIPE CARD IMAGES 
  */
 .image {
@@ -49,11 +77,4 @@
 
 .cb-modal-networks i:hover {
   color: #78c2ad;
-}
-
-/* 
- *  HEADER
- */
-.header-svg {
-  margin-right: 10px;
 }
