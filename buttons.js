@@ -92,3 +92,20 @@ function copyToClipboard() {
   // We simply remove the "hide"-class of it.
   document.getElementById('clipboard-message').classList.remove('hide');
 }
+
+// We want to hide the modal as soon as the user clicks outside of it.
+// For that, we need to check wether the background element
+// was clicked or a child of it. If it's the background, it should call
+// the `hideModal()` function.
+//
+// First, we select the background element.
+var elModalBackground = document.getElementById('modal-background');
+// We add a click event listener to it that triggers a function when
+// the element is clicked.
+elModalBackground.onclick = function (e) {
+  // We check if the target of the click was a child. If it was, we simply
+  // return void and trigger no action.
+  if (e.target !== this) return;
+  // At this point, we know the background was clicked. So we close the modal.
+  hideModal();
+};
