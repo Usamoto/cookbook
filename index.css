@@ -10,3 +10,10 @@
   height: 100%;
   object-fit: cover;
 }
+
+.social_media {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
