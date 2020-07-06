@@ -1,3 +1,6 @@
+/*
+ * CONTAINER FOR MAIN CONTENT 
+ */
 .cb-main-container {
   max-width: 650px;
   margin: 0 auto;
@@ -6,4 +9,11 @@
 .cb-table-container {
   max-width: 400px;
   margin: 0 auto;
+}
+
+/* 
+ *  HEADER
+ */
+.header-svg {
+  margin-right: 10px;
 }
