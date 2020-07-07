@@ -284,22 +284,144 @@ if (recipe) {
   elImage.setAttribute('src', recipe.image);
   elImage.setAttribute('alt', recipe.title);
 
+  function injectRecipeLinks(category, slug) {
+    const categoryRecipes = recipes.filter(
+      (item) => item.category === category
+    );
+    const otherRecipes = categoryRecipes.filter(
+      (item) => item.slug !== recipe.slug
+    );
+
+    elRecipeHeadlines = document.getElementById('recipes-headline');
+    elRecipeHeadlines.innerHTML = `Other Recipes in ${category}`;
+
+    // elRecipeOneTitlelink = document.getElementById('recipe-one-titlelink');
+    // elRecipeOneTitlelink.innerHTML = otherRecipes[0].title;
+    // elRecipeOneTitlelink.setAttribute('href', `recipe.html?recipe=vitellotonnato`)
+
+    const otherRecipesHTML = `
+    <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a
+                  href="recipe.html?recipe=${otherRecipes[0].slug}"
+                >
+                  ${otherRecipes[0].title}
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="${otherRecipes[0].image}"
+                  alt="${otherRecipes[0].title}"
+                  class="rounded img img-responsive full-width"
+                />
+                <div class="middle">
+                  <i class="fas fa-clock solid"> 15 min</i>
+                  <br />
+                  <i class="fas fa-smile solid"> Easy</i>
+                  <br />
+                  <i class="fas fa-fire-alt solid"> Calories</i>
+                </div>
+              </div>
+              <p class="card-text">
+              ${otherRecipes[0].description}
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="loadRecipe('${otherRecipes[0].slug}')"
+              >
+                Read
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="showShareModal('${otherRecipes[0].slug}')"
+              >
+                Share
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div
+            class="card border-primary mb-3 mx-auto"
+            style="max-width: 20rem;"
+          >
+            <div class="card-body">
+              <h4 class="card-title">
+                <a
+                  href="recipe.html?recipe=${otherRecipes[1].slug}"
+                >
+                  ${otherRecipes[1].title}
+                </a>
+              </h4>
+              <div class="image mb-3">
+                <img
+                  src="${otherRecipes[1].image}"
+                  alt="${otherRecipes[1].title}"
+                  class="rounded img img-responsive full-width"
+                />
+                <div class="middle">
+                  <i class="fas fa-clock solid"> 15 min</i>
+                  <br />
+                  <i class="fas fa-smile solid"> Easy</i>
+                  <br />
+                  <i class="fas fa-fire-alt solid"> Calories</i>
+                </div>
+              </div>
+              <p class="card-text">
+              ${otherRecipes[1].description}
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="loadRecipe('${otherRecipes[1].slug}')"
+              >
+                Read
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="showShareModal('${otherRecipes[1].slug}')"
+              >
+                Share
+              </button>
+            </div>
+          </div>
+        </div>
+    `;
+
+    const elOtherRecipes = document.getElementById('other-recipes');
+    elOtherRecipes.innerHTML = otherRecipesHTML;
+  }
+
   // Next, we do the navigation. We want to highlight the button that relates
   // to the category we are looking at right now. So we need to go through
   // the possible values and then apply the "active"-class when we find a match.
   switch (recipe.category) {
     case 'Antipasto':
       navAntipasto.classList.add('active');
+      injectRecipeLinks('Antipasto', recipe.slug);
       break;
     case 'Primo':
       navPrimo.classList.add('active');
+      injectRecipeLinks('Primo', recipe.slug);
       break;
     case 'Secondo':
       navSecondo.classList.add('active');
+      injectRecipeLinks('Secondo', recipe.slug);
       break;
     case 'Dolce':
       navDolce.classList.add('active');
+      injectRecipeLinks('Dolce', recipe.slug);
       break;
+    default:
+    // do nothing
   }
 
   // Finally, we need to generate the ingredients list

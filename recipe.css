@@ -17,3 +17,83 @@
 .header-svg {
   margin-right: 10px;
 }
+
+/*
+ *  RECIPE CARD IMAGES 
+ */
+.image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 
+ *  MODAL CLASSES
+ */
+.hide {
+  display: none;
+}
+
+.cb-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+}
+
+.cb-modal-wrapper {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cb-modal-networks > * + * {
+  margin-left: 8px;
+}
+
+.cb-modal-networks i {
+  cursor: pointer;
+}
+
+.cb-modal-networks i:hover {
+  color: #78c2ad;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.middle i {
+  font-size: 20px;
+}
+
+.image:hover .img {
+  opacity: 0.3;
+}
+
+.image:hover .middle {
+  opacity: 1;
+  color: black;
+}
