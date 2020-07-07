@@ -288,16 +288,10 @@ if (recipe) {
     const categoryRecipes = recipes.filter(
       (item) => item.category === category
     );
-    const otherRecipes = categoryRecipes.filter(
-      (item) => item.slug !== recipe.slug
-    );
+    const otherRecipes = categoryRecipes.filter((item) => item.slug !== slug);
 
     elRecipeHeadlines = document.getElementById('recipes-headline');
     elRecipeHeadlines.innerHTML = `Other Recipes in ${category}`;
-
-    // elRecipeOneTitlelink = document.getElementById('recipe-one-titlelink');
-    // elRecipeOneTitlelink.innerHTML = otherRecipes[0].title;
-    // elRecipeOneTitlelink.setAttribute('href', `recipe.html?recipe=vitellotonnato`)
 
     const otherRecipesHTML = `
     <div class="col-md">
@@ -453,6 +447,18 @@ if (recipe) {
   recipe.ingredients.forEach((tuple) =>
     generateIngredientItem(tuple[0], tuple[1])
   );
+
+  // Below the ingredients list, we want to add the Share button with the correct slug as an argument.
+  const elShareButton = document.getElementById('share-container');
+  const shareButtonHTML = `
+  <button
+    type="button"
+    class="btn btn-secondary"
+    onclick="showShareModal('${recipe.slug}')"
+  >
+    Share This Recipe
+  </button>`;
+  elShareButton.innerHTML = shareButtonHTML;
 } else {
   // This code block will run, if the param in the URL isn't found on the recipe data array
   elHeadline.innerHTML = 'Error 404: Page not found :(';
