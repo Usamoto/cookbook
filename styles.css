@@ -15,6 +15,13 @@ html {
   margin: 0 auto;
 }
 
+/* 
+ *  HIDE CLASS FOR JS STUFF (MODAL AND VIEW TOGGLE)
+ */
+.hide {
+  display: none;
+}
+
 /*
  *  INDEX: SVG BACKGROUND (KITCHEN) 
  */
@@ -89,9 +96,6 @@ html {
 /* 
  *  MODAL CLASSES
  */
-.hide {
-  display: none;
-}
 
 .cb-modal-container {
   position: fixed;
