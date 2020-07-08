@@ -15,6 +15,13 @@ html {
   margin: 0 auto;
 }
 
+/* 
+ *  HIDE CLASS FOR JS STUFF (MODAL AND VIEW TOGGLE)
+ */
+.hide {
+  display: none;
+}
+
 /*
  *  INDEX: SVG BACKGROUND (KITCHEN) 
  */
@@ -44,7 +51,7 @@ html {
 }
 
 /*
- *  RECIPE CARD IMAGES 
+ *  RECIPE CARDS (GRID) 
  */
 .image {
   position: relative;
@@ -86,12 +93,36 @@ html {
   color: black;
 }
 
+/*
+ *  RECIPE CARDS (GRID) 
+ */
+.image-list {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-list img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s;
+}
+
+.image-list:hover img {
+  opacity: 0.7;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* 
  *  MODAL CLASSES
  */
-.hide {
-  display: none;
-}
 
 .cb-modal-container {
   position: fixed;
