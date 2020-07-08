@@ -1,0 +1,19 @@
+.image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social_media {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
