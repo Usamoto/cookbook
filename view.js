@@ -5,6 +5,13 @@ function toggleGridView() {
     gridElement.classList.remove('hide');
   if (!listElement.classList.contains('hide'))
     listElement.classList.add('hide');
+
+  document
+    .getElementById('navlink-antipasto')
+    .setAttribute('href', '#antipasto');
+  document.getElementById('navlink-primo').setAttribute('href', '#primo');
+  document.getElementById('navlink-secondo').setAttribute('href', '#secondo');
+  document.getElementById('navlink-dolce').setAttribute('href', '#dolce');
 }
 
 function toggleListView() {
@@ -14,6 +21,15 @@ function toggleListView() {
     listElement.classList.remove('hide');
   if (!gridElement.classList.contains('hide'))
     gridElement.classList.add('hide');
+
+  document
+    .getElementById('navlink-antipasto')
+    .setAttribute('href', '#antipasto-list');
+  document.getElementById('navlink-primo').setAttribute('href', '#primo-list');
+  document
+    .getElementById('navlink-secondo')
+    .setAttribute('href', '#secondo-list');
+  document.getElementById('navlink-dolce').setAttribute('href', '#dolce-list');
 }
 
 document
