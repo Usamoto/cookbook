@@ -1,1064 +1,1472 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cook Book</title>
-    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/minty/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/bootstrap-social.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
+  </head>
 
-<body id="pagetop" data-spy="scroll">
+  <body id="pagetop" data-spy="scroll">
     <!-- BACKGROUND SVG (KITCHEN) -->
     <div class="background-svg"></div>
 
     <!-- NAVIGATION BAR -->
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary mb-5">
-        <div class="container">
-            <a href="#pagetop">
-                <svg class="header-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewbox="0 0 172 172" style="fill: #000000;">
-          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
-            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal;">
-            <path d="M0,172v-172h172v172z" fill="none"></path>
-            <path
-              d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
-              fill="#f3969a"></path>
-            <g>
+      <div class="container">
+        <a href="#pagetop">
+          <svg
+            class="header-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="60"
+            height="60"
+            viewbox="0 0 172 172"
+            style="fill: #000000;"
+          >
+            <g
+              fill="none"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal;"
+            >
+              <path d="M0,172v-172h172v172z" fill="none"></path>
               <path
-                d="M126.13333,31.53333h-68.8c-6.32673,0 -13.80587,3.05587 -14.28747,17.2h-0.04587c0,0 0,56.8288 0,80.26667l0.0516,-0.1548c0.52173,10.4318 7.3014,11.62147 10.28847,11.62147h67.05993c0.53893,0 1.43333,0 2.86667,0c5.73333,0 5.73333,-5.73333 5.73333,-5.73333v-17.19427v-83.13907c0,-1.58527 -1.2814,-2.86667 -2.86667,-2.86667z"
-                fill="#78c2ad"></path>
-              <path
-                d="M120.4,120.4h-67.05993c-3.8184,0 -4.60673,3.2078 -4.60673,7.16667c0,3.96173 0.78833,7.16667 4.60673,7.16667h67.05993z"
-                fill="#ffe0b2"></path>
-              <path d="M53.34007,120.4c-3.3454,0 -4.36307,2.4596 -4.5666,5.73333h71.62653v-5.73333z" fill="#e0b990">
-              </path>
-              <path
-                d="M126.13333,120.4h-5.73333v20.06667c0.53893,0 1.43333,0 2.86667,0c5.73333,0 5.73333,-5.73333 5.73333,-5.73333v-17.19427c0,1.57953 -1.2814,2.86093 -2.86667,2.86093z"
-                fill="#62a390"></path>
-              <rect x="24" y="33" transform="scale(2.86667,2.86667)" width="14" height="3" fill="#666666"></rect>
-              <rect x="24" y="23" transform="scale(2.86667,2.86667)" width="14" height="10" fill="#ffffff"></rect>
-              <path
-                d="M88.86667,80.26667v0c-1.5824,0 -2.86667,1.28427 -2.86667,2.86667v11.46667h5.73333v-11.46667c0,-1.5824 -1.28427,-2.86667 -2.86667,-2.86667z"
-                fill="#cccccc"></path>
-              <path
-                d="M100.33333,80.26667v0c-1.5824,0 -2.86667,1.28427 -2.86667,2.86667v11.46667h5.73333v-11.46667c0,-1.5824 -1.28427,-2.86667 -2.86667,-2.86667z"
-                fill="#cccccc"></path>
-              <path
-                d="M77.4,80.26667v0c-1.5824,0 -2.86667,1.28427 -2.86667,2.86667v11.46667h5.73333v-11.46667c0,-1.5824 -1.28427,-2.86667 -2.86667,-2.86667z"
-                fill="#cccccc"></path>
-              <path
-                d="M106.06667,54.46667c-1.7974,0 -3.4744,0.45007 -4.988,1.1868c-2.51693,-4.13373 -7.02047,-6.92013 -12.212,-6.92013c-5.19153,0 -9.69507,2.7864 -12.212,6.92013c-1.5136,-0.73673 -3.1906,-1.1868 -4.988,-1.1868c-6.33247,0 -11.46667,5.1342 -11.46667,11.46667c0,6.33247 5.1342,11.46667 11.46667,11.46667c3.15907,0 6.02,-1.27853 8.09547,-3.34827c2.48253,2.06113 5.62727,3.34827 9.10453,3.34827c3.47727,0 6.622,-1.28713 9.10453,-3.34827c2.07547,2.06973 4.9364,3.34827 8.09547,3.34827c6.33247,0 11.46667,-5.1342 11.46667,-11.46667c0,-6.33247 -5.1342,-11.46667 -11.46667,-11.46667z"
-                fill="#ffffff"></path>
+                d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+                fill="#f3969a"
+              ></path>
+              <g>
+                <path
+                  d="M126.13333,31.53333h-68.8c-6.32673,0 -13.80587,3.05587 -14.28747,17.2h-0.04587c0,0 0,56.8288 0,80.26667l0.0516,-0.1548c0.52173,10.4318 7.3014,11.62147 10.28847,11.62147h67.05993c0.53893,0 1.43333,0 2.86667,0c5.73333,0 5.73333,-5.73333 5.73333,-5.73333v-17.19427v-83.13907c0,-1.58527 -1.2814,-2.86667 -2.86667,-2.86667z"
+                  fill="#78c2ad"
+                ></path>
+                <path
+                  d="M120.4,120.4h-67.05993c-3.8184,0 -4.60673,3.2078 -4.60673,7.16667c0,3.96173 0.78833,7.16667 4.60673,7.16667h67.05993z"
+                  fill="#ffe0b2"
+                ></path>
+                <path
+                  d="M53.34007,120.4c-3.3454,0 -4.36307,2.4596 -4.5666,5.73333h71.62653v-5.73333z"
+                  fill="#e0b990"
+                ></path>
+                <path
+                  d="M126.13333,120.4h-5.73333v20.06667c0.53893,0 1.43333,0 2.86667,0c5.73333,0 5.73333,-5.73333 5.73333,-5.73333v-17.19427c0,1.57953 -1.2814,2.86093 -2.86667,2.86093z"
+                  fill="#62a390"
+                ></path>
+                <rect
+                  x="24"
+                  y="33"
+                  transform="scale(2.86667,2.86667)"
+                  width="14"
+                  height="3"
+                  fill="#666666"
+                ></rect>
+                <rect
+                  x="24"
+                  y="23"
+                  transform="scale(2.86667,2.86667)"
+                  width="14"
+                  height="10"
+                  fill="#ffffff"
+                ></rect>
+                <path
+                  d="M88.86667,80.26667v0c-1.5824,0 -2.86667,1.28427 -2.86667,2.86667v11.46667h5.73333v-11.46667c0,-1.5824 -1.28427,-2.86667 -2.86667,-2.86667z"
+                  fill="#cccccc"
+                ></path>
+                <path
+                  d="M100.33333,80.26667v0c-1.5824,0 -2.86667,1.28427 -2.86667,2.86667v11.46667h5.73333v-11.46667c0,-1.5824 -1.28427,-2.86667 -2.86667,-2.86667z"
+                  fill="#cccccc"
+                ></path>
+                <path
+                  d="M77.4,80.26667v0c-1.5824,0 -2.86667,1.28427 -2.86667,2.86667v11.46667h5.73333v-11.46667c0,-1.5824 -1.28427,-2.86667 -2.86667,-2.86667z"
+                  fill="#cccccc"
+                ></path>
+                <path
+                  d="M106.06667,54.46667c-1.7974,0 -3.4744,0.45007 -4.988,1.1868c-2.51693,-4.13373 -7.02047,-6.92013 -12.212,-6.92013c-5.19153,0 -9.69507,2.7864 -12.212,6.92013c-1.5136,-0.73673 -3.1906,-1.1868 -4.988,-1.1868c-6.33247,0 -11.46667,5.1342 -11.46667,11.46667c0,6.33247 5.1342,11.46667 11.46667,11.46667c3.15907,0 6.02,-1.27853 8.09547,-3.34827c2.48253,2.06113 5.62727,3.34827 9.10453,3.34827c3.47727,0 6.622,-1.28713 9.10453,-3.34827c2.07547,2.06973 4.9364,3.34827 8.09547,3.34827c6.33247,0 11.46667,-5.1342 11.46667,-11.46667c0,-6.33247 -5.1342,-11.46667 -11.46667,-11.46667z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+              <path d="" fill="none"></path>
             </g>
-            <path d="" fill="none"></path>
-          </g>
-        </svg>
-            </a>
-            <a class="navbar-brand" href="#pagetop">Little Italy</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a id="navlink-antipasto" class="nav-link" href="#antipasto">Antipasto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="navlink-primo" class="nav-link" href="#primo">Primo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="navlink-secondo" class="nav-link" href="#secondo">Secondo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="navlink-dolce" class="nav-link" href="#dolce">Dolce</a>
-                    </li>
-                </ul>
-            </div>
+          </svg>
+        </a>
+        <a class="navbar-brand" href="#pagetop">Little Italy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id="navlink-antipasto" class="nav-link" href="#antipasto"
+                >Antipasto</a
+              >
+            </li>
+            <li class="nav-item">
+              <a id="navlink-primo" class="nav-link" href="#primo">Primo</a>
+            </li>
+            <li class="nav-item">
+              <a id="navlink-secondo" class="nav-link" href="#secondo"
+                >Secondo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a id="navlink-dolce" class="nav-link" href="#dolce">Dolce</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <main class="container">
-        <!-- VIEW SWITCH -->
-        <div class="text-right">
-            View:
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label id="toggle-grid-view" class="btn btn-primary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked="" />
-          <i class="fas fa-grip-horizontal"></i>
-        </label>
-                <label id="toggle-list-view" class="btn btn-primary">
-          <input type="radio" name="options" id="option2" autocomplete="off" />
-          <i class="fas fa-bars"></i>
-        </label>
-            </div>
+      <!-- VIEW SWITCH -->
+      <div class="text-right">
+        View:
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label id="toggle-grid-view" class="btn btn-primary active">
+            <input
+              type="radio"
+              name="options"
+              id="option1"
+              autocomplete="off"
+              checked=""
+            />
+            <i class="fas fa-grip-horizontal"></i>
+          </label>
+          <label id="toggle-list-view" class="btn btn-primary">
+            <input
+              type="radio"
+              name="options"
+              id="option2"
+              autocomplete="off"
+            />
+            <i class="fas fa-bars"></i>
+          </label>
         </div>
+      </div>
 
-        <!-- GRID VIEW -->
-        <div id="grid-view">
-            <!-- ANTIPASTO RECIPES -->
-            <div id="antipasto" class="py-3"></div>
-            <h2 class="mb-4 text-center text-secondary">Antipasto</h2>
-            <div class="d-flex flex-wrap">
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=vitellotonnato">
-                  Vitello Tonnato
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=vitellotonnato">
-                                <img src="Images/antiVit.jpg" alt="Vitello Tonnato" class="rounded img img-responsive full-width" />
-                              </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"></i> 15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"></i> Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"></i> Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('vitellotonnato')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('vitellotonnato')">
-                Share
-              </button>
-                        </div>
-                    </div>
+      <!-- GRID VIEW -->
+      <div id="grid-view">
+        <!-- ANTIPASTO RECIPES -->
+        <div id="antipasto" class="py-3"></div>
+        <h2 class="mb-4 text-center text-secondary">Antipasto</h2>
+        <div class="d-flex flex-wrap">
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=vitellotonnato">
+                    Vitello Tonnato
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=vitellotonnato">
+                    <img
+                      src="Images/antiVit.jpg"
+                      alt="Vitello Tonnato"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"></i> 15 min
+                    <br />
+                    <i class="fas fa-smile solid"></i> Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"></i> Calories
+                  </div>
                 </div>
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=mozzarellacaprese">
-                  Mozzarella Caprese
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=mozzarellacaprese">
-                                <img src="Images/antiMoz.jpg" alt="Mozzarella Caprese" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('mozzarellacaprese')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('mozzarellacaprese')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=prosciuttomelone">
-                  Prosciutto Melone
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=prosciuttomelone">
-                                <img src="Images/antiProci.jpg" alt="Prosciutto Melone" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('prosciuttomelone')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('prosciuttomelone')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PRIMO RECIPES -->
-            <div id="primo" class="py-5"></div>
-            <h2 class="mb-4 text-center text-secondary">Primo</h2>
-            <div class="d-flex flex-wrap mb-5">
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=tagliatelle">
-                  Taglietelle Al Tartufo
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=tagliatelle">
-                                <img src="Images/primTag.jpg" alt="Taglietelle Al Tartufo" class="rounded img img-responsive full-width" />
-                              </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('tagliatelle')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('tagliatelle')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=risotto">
-                  Risotto Con Calamari
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=risotto">
-                                <img src="Images/primRisso.jpg" alt="Risotto Con Calamari" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('risotto')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('risotto')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=spaghettibolognese">
-                  Spaghetti Bolognese
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=spaghettibolognese">
-                                <img src="Images/priSpag.jpg" alt="Spaghetti Bolognese" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('spaghettibolognese')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('spaghettibolognese')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SECONDO RECIPES -->
-            <div id="secondo" class="py-5"></div>
-            <h2 class="mb-4 text-center text-secondary">Secondo</h2>
-            <div class="d-flex flex-wrap mb-5">
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=filetto">
-                  Filetto Di Maiale
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=filetto">
-                                <img src="Images/secFil.jpg" alt="Filetto Di Maiale Ai Funghi" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('filetto')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('filetto')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=milanese">
-                  Milanese
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=milanese">
-                                <img src="Images/secMil.jpg" alt="Milanese" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('milanese')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('milanese')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=branzino">
-                  Branzino Al Sale
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=branzino">
-                                <img src="Images/secBran.jpg" alt="Branzino Al Sale" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('branzino')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('branzino')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DOLCE RECIPES -->
-            <div id="dolce" class="py-5"></div>
-            <h2 class="mb-4 text-center text-secondary">Dolce</h2>
-            <div class="d-flex flex-wrap mb-5">
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=tiramisu">
-                  Tiramisu
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=tiramisu">
-                                <img src="Images/dolcTirami.jpg" alt="Tiramisu" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('tiramisu')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('tiramisu')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=pannacotta">
-                  Panna Cotta
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=pannacotta">
-                                <img src="Images/dolcCotta.jpg" alt="Panna Cotta" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('pannacotta')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('pannacotta')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card border-primary mb-3 mx-auto" style="max-width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="recipe.html?recipe=semifreddo">
-                  Semifreddo Al Bergamotto
-                </a>
-                            </h4>
-                            <div class="image mb-3">
-                              <a href="recipe.html?recipe=semifreddo">
-                                <img src="Images/dolcsem.jpg" alt="Semifreddo Al Bergamotto" class="rounded img img-responsive full-width" />
-                                </a>
-                                <div class="middle">
-                                    <i class="fas fa-clock solid"> </i>15 min
-                                    <br />
-                                    <i class="fas fa-smile solid"> </i>Easy
-                                    <br />
-                                    <i class="fas fa-fire-alt solid"> </i>Calories
-                                </div>
-                            </div>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="loadRecipe('semifreddo')">
-                Read
-              </button>
-                            <button type="button" class="btn btn-secondary" onclick="showShareModal('semifreddo')">
-                Share
-              </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- LIST VIEW -->
-        <div id="list-view" class="hide">
-            <!-- ANTIPASTO RECIPES -->
-            <div id="antipasto-list" class="py-3"></div>
-            <h2 class="mb-4 text-left text-secondary">Antipasto</h2>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=vitellotonnato">
-                            <img src="Images/antiVit.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=vitellotonnato">
-                  Vitello Tonnato
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=mozzarellacaprese">
-                            <img src="Images/antiMoz.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=mozzarellacaprese">
-                  Mozzarella Caprese
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=prosciuttomelone">
-                            <img src="Images/antiProci.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=prosciuttomelone">
-                  Prosciutto Melone
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PRIMO RECIPES -->
-            <div id="primo-list" class="py-5"></div>
-            <h2 class="mb-4 text-left text-secondary">Primo</h2>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=tagliatelle">
-                            <img src="Images/primTag.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=tagliatelle">
-                  Taglietelle Al Tartufo
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=risotto">
-                            <img src="Images/primRisso.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=risotto">
-                  Risotto Con Calamari
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=spaghettibolognese">
-                            <img src="Images/priSpag.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=spaghettibolognese">
-                  Spaghetti Bolognese
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SECONDO RECIPES -->
-            <div id="secondo-list" class="py-5"></div>
-            <h2 class="mb-4 text-left text-secondary">Secondo</h2>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=filetto">
-                            <img src="Images/secFil.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=filetto">
-                  Filetto Di Maiale
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=milanese">
-                            <img src="Images/secMil.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=milanese">
-                  Milanese
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=branzino">
-                            <img src="Images/secBran.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=branzino">
-                  Branzino Al Sale
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DOLCE RECIPES -->
-            <div id="dolce-list" class="py-5"></div>
-            <h2 class="mb-4 text-left text-secondary">Dolce</h2>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=tiramisu">
-                            <img src="Images/dolcTirami.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=tiramisu">
-                  Tiramisu
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=pannacotta">
-                            <img src="Images/dolcCotta.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=pannacotta">
-                  Panna Cotta
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-4 image-list">
-                        <a href="recipe.html?recipe=semifreddo">
-                            <img src="Images/dolcsem.jpg" class="card-img" />
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="recipe.html?recipe=semifreddo">
-                  Semifreddo Al Bergamotto
-                </a>
-                            </h5>
-                            <p class="card-text line-clamp">
-                                I love cheese, especially when the cheese comes out everybody's happy queso. Fromage manchego fromage frais croque monsieur cheesy grin croque monsieur the big cheese cheese on toast.
-                            </p>
-                            <p class="card-text">
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-clock solid"></i> 15 min
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-smile solid"></i> Easy
-                </span>
-                                <span class="badge badge-pill badge-secondary">
-                  <i class="fas fa-fire-alt solid"></i> 290
-                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card bg-light my-3">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-lg-1 col-sm-2 col-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewbox="0 0 172 172" style="fill: #000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                style="mix-blend-mode: normal;">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g>
-                  <path
-                    d="M157.66667,86c0,39.57433 -32.09233,71.66667 -71.66667,71.66667c-39.57433,0 -71.66667,-32.09233 -71.66667,-71.66667c0,-39.57433 32.09233,-71.66667 71.66667,-71.66667c39.57433,0 71.66667,32.09233 71.66667,71.66667z"
-                    fill="#78c2ad"></path>
-                  <path
-                    d="M111.08333,89.58333c0,-2.82725 -2.07117,-3.58333 -5.375,-3.58333h1.79167c-3.30383,0 -7.16667,0.75608 -7.16667,3.58333v45.0425c0,2.82725 2.67317,5.12417 5.977,5.12417h2.39367c3.2895,0 5.96267,-2.29692 5.96267,-5.12417zM76.43967,77.56125h-9.56033l-2.37933,56.3085c0,2.82725 2.14283,5.12417 4.773,5.12417h4.773c2.6445,0 4.78733,-2.29692 4.78733,-5.12417z"
-                    fill="#3f675c"></path>
-                  <path
-                    d="M111.08333,89.58333h-10.75v-57.33333c5.27825,0 23.92233,9.96525 10.75,57.33333zM78.83333,32.25v32.25h-3.58333v-32.25h-7.16667v32.25h-3.58333v-32.25h-4.773l-2.39367,35.83333l9.56033,9.47792h9.56033l9.546,-9.47792l-2.37933,-35.83333z"
-                    fill="#e0fae3"></path>
-                </g>
-              </g>
-            </svg>
-                    </div>
-                    <div class="col">
-                        <h4 class="card-title">Want more?</h4>
-                    </div>
-                </div>
-                <p class="card-text">
-                    <strong>
-            Sign up to the Little Italy newsletter and get a free Ebook with
-            all our recipes!
-          </strong> There will also be lots of mails with tracker images and spam. We will also most definitely sell your data to several advertisement companies. What a deal!
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
                 </p>
-
-                <fieldset>
-                    <div class="form-group mx-auto" style="max-width: 600px;">
-                        <div class="input-group">
-                            <input class="form-control form-control-lg" type="text" placeholder="Your mail address" id="inputLarge" />
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-primary">
-                  Enter
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('vitellotonnato')"
+                >
+                  Read
                 </button>
-                            </div>
-                        </div>
-                    </div>
-                </fieldset>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('vitellotonnato')"
+                >
+                  Share
+                </button>
+              </div>
             </div>
+          </div>
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=mozzarellacaprese">
+                    Mozzarella Caprese
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=mozzarellacaprese">
+                    <img
+                      src="Images/antiMoz.jpg"
+                      alt="Mozzarella Caprese"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('mozzarellacaprese')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('mozzarellacaprese')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=prosciuttomelone">
+                    Prosciutto Melone
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=prosciuttomelone">
+                    <img
+                      src="Images/antiProci.jpg"
+                      alt="Prosciutto Melone"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('prosciuttomelone')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('prosciuttomelone')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- SPACER DIV -->
-        <div class="py-5"></div>
+        <!-- PRIMO RECIPES -->
+        <div id="primo" class="py-5"></div>
+        <h2 class="mb-4 text-center text-secondary">Primo</h2>
+        <div class="d-flex flex-wrap mb-5">
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=tagliatelle">
+                    Taglietelle Al Tartufo
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=tagliatelle">
+                    <img
+                      src="Images/primTag.jpg"
+                      alt="Taglietelle Al Tartufo"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('tagliatelle')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('tagliatelle')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=risotto">
+                    Risotto Con Calamari
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=risotto">
+                    <img
+                      src="Images/primRisso.jpg"
+                      alt="Risotto Con Calamari"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('risotto')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('risotto')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=spaghettibolognese">
+                    Spaghetti Bolognese
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=spaghettibolognese">
+                    <img
+                      src="Images/priSpag.jpg"
+                      alt="Spaghetti Bolognese"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('spaghettibolognese')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('spaghettibolognese')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECONDO RECIPES -->
+        <div id="secondo" class="py-5"></div>
+        <h2 class="mb-4 text-center text-secondary">Secondo</h2>
+        <div class="d-flex flex-wrap mb-5">
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=filetto">
+                    Filetto Di Maiale
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=filetto">
+                    <img
+                      src="Images/secFil.jpg"
+                      alt="Filetto Di Maiale Ai Funghi"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('filetto')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('filetto')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=milanese">
+                    Milanese
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=milanese">
+                    <img
+                      src="Images/secMil.jpg"
+                      alt="Milanese"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('milanese')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('milanese')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=branzino">
+                    Branzino Al Sale
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=branzino">
+                    <img
+                      src="Images/secBran.jpg"
+                      alt="Branzino Al Sale"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('branzino')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('branzino')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOLCE RECIPES -->
+        <div id="dolce" class="py-5"></div>
+        <h2 class="mb-4 text-center text-secondary">Dolce</h2>
+        <div class="d-flex flex-wrap mb-5">
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=tiramisu">
+                    Tiramisu
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=tiramisu">
+                    <img
+                      src="Images/dolcTirami.jpg"
+                      alt="Tiramisu"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('tiramisu')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('tiramisu')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=pannacotta">
+                    Panna Cotta
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=pannacotta">
+                    <img
+                      src="Images/dolcCotta.jpg"
+                      alt="Panna Cotta"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('pannacotta')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('pannacotta')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div
+              class="card border-primary mb-3 mx-auto"
+              style="max-width: 20rem;"
+            >
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="recipe.html?recipe=semifreddo">
+                    Semifreddo Al Bergamotto
+                  </a>
+                </h4>
+                <div class="image mb-3">
+                  <a href="recipe.html?recipe=semifreddo">
+                    <img
+                      src="Images/dolcsem.jpg"
+                      alt="Semifreddo Al Bergamotto"
+                      class="rounded img img-responsive full-width"
+                    />
+                  </a>
+                  <div class="middle">
+                    <i class="fas fa-clock solid"> </i>15 min
+                    <br />
+                    <i class="fas fa-smile solid"> </i>Easy
+                    <br />
+                    <i class="fas fa-fire-alt solid"> </i>Calories
+                  </div>
+                </div>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="loadRecipe('semifreddo')"
+                >
+                  Read
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="showShareModal('semifreddo')"
+                >
+                  Share
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIST VIEW -->
+      <div id="list-view" class="hide">
+        <!-- ANTIPASTO RECIPES -->
+        <div id="antipasto-list" class="py-3"></div>
+        <h2 class="mb-4 text-left text-secondary">Antipasto</h2>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=vitellotonnato">
+                <img src="Images/antiVit.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=vitellotonnato">
+                    Vitello Tonnato
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=mozzarellacaprese">
+                <img src="Images/antiMoz.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=mozzarellacaprese">
+                    Mozzarella Caprese
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=prosciuttomelone">
+                <img src="Images/antiProci.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=prosciuttomelone">
+                    Prosciutto Melone
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRIMO RECIPES -->
+        <div id="primo-list" class="py-5"></div>
+        <h2 class="mb-4 text-left text-secondary">Primo</h2>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=tagliatelle">
+                <img src="Images/primTag.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=tagliatelle">
+                    Taglietelle Al Tartufo
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=risotto">
+                <img src="Images/primRisso.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=risotto">
+                    Risotto Con Calamari
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=spaghettibolognese">
+                <img src="Images/priSpag.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=spaghettibolognese">
+                    Spaghetti Bolognese
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECONDO RECIPES -->
+        <div id="secondo-list" class="py-5"></div>
+        <h2 class="mb-4 text-left text-secondary">Secondo</h2>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=filetto">
+                <img src="Images/secFil.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=filetto">
+                    Filetto Di Maiale
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=milanese">
+                <img src="Images/secMil.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=milanese">
+                    Milanese
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=branzino">
+                <img src="Images/secBran.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=branzino">
+                    Branzino Al Sale
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOLCE RECIPES -->
+        <div id="dolce-list" class="py-5"></div>
+        <h2 class="mb-4 text-left text-secondary">Dolce</h2>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=tiramisu">
+                <img src="Images/dolcTirami.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=tiramisu">
+                    Tiramisu
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=pannacotta">
+                <img src="Images/dolcCotta.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=pannacotta">
+                    Panna Cotta
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-4 image-list">
+              <a href="recipe.html?recipe=semifreddo">
+                <img src="Images/dolcsem.jpg" class="card-img" />
+              </a>
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="recipe.html?recipe=semifreddo">
+                    Semifreddo Al Bergamotto
+                  </a>
+                </h5>
+                <p class="card-text line-clamp">
+                  I love cheese, especially when the cheese comes out
+                  everybody's happy queso. Fromage manchego fromage frais croque
+                  monsieur cheesy grin croque monsieur the big cheese cheese on
+                  toast.
+                </p>
+                <p class="card-text">
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-clock solid"></i> 15 min
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-smile solid"></i> Easy
+                  </span>
+                  <span class="badge badge-pill badge-secondary">
+                    <i class="fas fa-fire-alt solid"></i> 290
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-light my-3">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-lg-1 col-sm-2 col-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="64"
+                height="64"
+                viewbox="0 0 172 172"
+                style="fill: #000000;"
+              >
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal;"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g>
+                    <path
+                      d="M157.66667,86c0,39.57433 -32.09233,71.66667 -71.66667,71.66667c-39.57433,0 -71.66667,-32.09233 -71.66667,-71.66667c0,-39.57433 32.09233,-71.66667 71.66667,-71.66667c39.57433,0 71.66667,32.09233 71.66667,71.66667z"
+                      fill="#78c2ad"
+                    ></path>
+                    <path
+                      d="M111.08333,89.58333c0,-2.82725 -2.07117,-3.58333 -5.375,-3.58333h1.79167c-3.30383,0 -7.16667,0.75608 -7.16667,3.58333v45.0425c0,2.82725 2.67317,5.12417 5.977,5.12417h2.39367c3.2895,0 5.96267,-2.29692 5.96267,-5.12417zM76.43967,77.56125h-9.56033l-2.37933,56.3085c0,2.82725 2.14283,5.12417 4.773,5.12417h4.773c2.6445,0 4.78733,-2.29692 4.78733,-5.12417z"
+                      fill="#3f675c"
+                    ></path>
+                    <path
+                      d="M111.08333,89.58333h-10.75v-57.33333c5.27825,0 23.92233,9.96525 10.75,57.33333zM78.83333,32.25v32.25h-3.58333v-32.25h-7.16667v32.25h-3.58333v-32.25h-4.773l-2.39367,35.83333l9.56033,9.47792h9.56033l9.546,-9.47792l-2.37933,-35.83333z"
+                      fill="#e0fae3"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="col">
+              <h4 class="card-title">Want more?</h4>
+            </div>
+          </div>
+          <p class="card-text">
+            <strong>
+              Sign up to the Little Italy newsletter and get a free Ebook with
+              all our recipes!
+            </strong>
+            There will also be lots of mails with tracker images and spam. We
+            will also most definitely sell your data to several advertisement
+            companies. What a deal!
+          </p>
+
+          <fieldset>
+            <div class="form-group mx-auto" style="max-width: 600px;">
+              <div class="input-group">
+                <input
+                  class="form-control form-control-lg"
+                  type="text"
+                  placeholder="Your mail address"
+                  id="inputLarge"
+                />
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-primary">
+                    Enter
+                  </button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <!-- SPACER DIV -->
+      <div class="py-5"></div>
     </main>
 
     <!-- FOOTER -->
     <footer class="navbar navbar-dark bg-dark text-white py-4">
-        <div class="container">
-            <div class="col-md text-md-left text-center mb-md-0 mb-2">
-                <a class="mr-2 d-inline-block" href="Images/horse.gif">
-                    <button type="submit" value="" class="btn btn-lg btn-google">
-            <i class="fas fa-envelope-square"></i>
-          </button>
-                </a>
-                <a class="mr-2 d-inline-block" href="Images/horse.gif">
-                    <button type="submit" value="" class="btn btn-lg btn-facebook">
-            <i class="fab fa-facebook-f pr-1"></i>
-          </button>
-                </a>
-                <a class="mr-2 d-inline-block" href="Images/horse.gif">
-                    <button type="submit" value="" class="btn btn-lg btn-instagram">
-            <i class="fab fa-instagram-square"></i>
-          </button>
-                </a>
-                <a class="mr-3 d-inline-block" href="Images/horse.gif">
-                    <button type="submit" value="" class="btn btn-lg btn-pinterest">
-            <i class="fab fa-youtube"></i>
-          </button>
-                </a>
-            </div>
-            <div class="col-md">
-                <div class="text-md-right text-center">
-                    <small>
-            Group 2: Bruno, Ourania, Joss
-          </small>
-                </div>
-                <div class="text-md-right text-center">
-                    <small>
+      <div class="container">
+        <div class="col-md text-md-left text-center mb-md-0 mb-2">
+          <a class="mr-2 d-inline-block" href="Images/horse.gif">
+            <button type="submit" value="" class="btn btn-lg btn-google">
+              <i class="fas fa-envelope-square"></i>
+            </button>
+          </a>
+          <a class="mr-2 d-inline-block" href="Images/horse.gif">
+            <button type="submit" value="" class="btn btn-lg btn-facebook">
+              <i class="fab fa-facebook-f pr-1"></i>
+            </button>
+          </a>
+          <a class="mr-2 d-inline-block" href="Images/horse.gif">
+            <button type="submit" value="" class="btn btn-lg btn-instagram">
+              <i class="fab fa-instagram-square"></i>
+            </button>
+          </a>
+          <a class="mr-3 d-inline-block" href="Images/horse.gif">
+            <button type="submit" value="" class="btn btn-lg btn-pinterest">
+              <i class="fab fa-youtube"></i>
+            </button>
+          </a>
+        </div>
+        <div class="col-md">
+          <div class="text-md-right text-center">
+            <small>
+              Group 2: Bruno, Ourania, Joss
+            </small>
+          </div>
+          <div class="text-md-right text-center">
+            <small>
               Logo & Illustration by <a href="https://icons8.com">Icons8</a>
             </small>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- BACK TO TOP ARROW -->
     <a href="#pagetop" class="hide-on-mobile">
-        <div id="myBtn" title="Go to top">
-            <i class="fas fa-arrow-up"></i>
-        </div>
+      <div id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+      </div>
     </a>
 
     <!-- MODAL ELEMENT FOR SHARE BUTTON -->
     <div id="modal-background" class="cb-modal-container hide">
-        <div class="cb-modal-wrapper">
-            <div class="modal-content">
-                <div class="modal-header bg-primary mb-3">
-                    <h5 class="modal-title text-white">Share Recipe</h5>
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" onclick="hideModal()">
-            <span aria-hidden="true">&times;</span>
-          </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group d-flex">
-                        <input type="text" class="form-control mr-1" id="share-link" value="" />
-                        <button type="button" class="btn btn-outline-primary" onclick="copyToClipboard()">
-              Copy
+      <div class="cb-modal-wrapper">
+        <div class="modal-content">
+          <div class="modal-header bg-primary mb-3">
+            <h5 class="modal-title text-white">Share Recipe</h5>
+            <button
+              type="button"
+              class="close text-white"
+              data-dismiss="modal"
+              aria-label="Close"
+              onclick="hideModal()"
+            >
+              <span aria-hidden="true">&times;</span>
             </button>
-                    </div>
-                    <div id="clipboard-message" class="alert alert-light text-center text-black-50 hide">
-                        Copied the link to your clipboard
-                    </div>
-                    <div class="cb-modal-networks text-center" style="font-size: 1.4rem;">
-                        <a id="share-pinterest" href="#" target="_blank" class="text-muted" style="text-decoration: none;">
-                            <i class="fab fa-pinterest"></i>
-                        </a>
-                        <a id="share-facebook" href="#" target="_blank" class="text-muted" style="text-decoration: none;">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a id="share-mail" href="#" target="_blank" class="text-muted" style="text-decoration: none;">
-                            <i class="fas fa-at"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary d-block mx-auto" onclick="hideModal()">
-            Thanks!
-          </button>
-                </div>
+          </div>
+          <div class="modal-body">
+            <div class="form-group d-flex">
+              <input
+                type="text"
+                class="form-control mr-1"
+                id="share-link"
+                value=""
+              />
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="copyToClipboard()"
+              >
+                Copy
+              </button>
             </div>
+            <div
+              id="clipboard-message"
+              class="alert alert-light text-center text-black-50 hide"
+            >
+              Copied the link to your clipboard
+            </div>
+            <div
+              class="cb-modal-networks text-center"
+              style="font-size: 1.4rem;"
+            >
+              <a
+                id="share-pinterest"
+                href="#"
+                target="_blank"
+                class="text-muted"
+                style="text-decoration: none;"
+              >
+                <i class="fab fa-pinterest"></i>
+              </a>
+              <a
+                id="share-facebook"
+                href="#"
+                target="_blank"
+                class="text-muted"
+                style="text-decoration: none;"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                id="share-mail"
+                href="#"
+                target="_blank"
+                class="text-muted"
+                style="text-decoration: none;"
+              >
+                <i class="fas fa-at"></i>
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary d-block mx-auto"
+              onclick="hideModal()"
+            >
+              Thanks!
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/buttons.js"></script>
     <script src="js/view.js"></script>
     <script src="js/scrolltotop.js"></script>
-</body>
-
+  </body>
 </html>
