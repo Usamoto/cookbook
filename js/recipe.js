@@ -1,9 +1,8 @@
-// Recipe data that gets displayed on the page
+//
+//  This file holds all the logic for loading the appropriate content into the recipe page template.
+//
 
-// Vitello Tonnato, Mozzarella caprese, prociutto melone
-// Primo: Taglietelle al tartufo, rissoto con calamari, spaghetti bolognese
-// secondo: filetto di maiale ai funghi, Milanese, branzino al sale
-// dolce: Tiramisu, panna cotta, semifreddo al bergamotto
+// Recipe data that gets displayed on the page.
 const recipes = [
   {
     slug: 'vitellotonnato',
@@ -251,7 +250,6 @@ const params = new URL(document.location).searchParams;
 const query = params.get('recipe'); // for `recipe.html?recipe=tiramisu`, this variable would now be 'tiramisu'
 
 // Defining all the page elements that need to change
-// (By applying `id="el-something"`, we can select them in JS with getElementById)
 const elTag = document.getElementById('el-tag');
 const elHeadline = document.getElementById('el-headline');
 const elDescription = document.getElementById('el-description');
@@ -266,11 +264,12 @@ const navPrimo = document.getElementById('nav-primo');
 const navSecondo = document.getElementById('nav-secondo');
 const navDolce = document.getElementById('nav-dolce');
 
-// We look through the data array to get the recipe data we need
+// We look through the data array to filter for the recipe data we need.
 const recipe = recipes.filter((item) => item.slug == query)[0];
 
-// Before applying all the data to the page, we need to check if the query actually relates to something in our data
-// If it does, we keep going
+// Before applying all the data to the page, we need to check if the query actually
+// relates to something in our data.
+// If it does, we keep going.
 if (recipe) {
   // First we set all the simple elements
   // ('Simple' meaning elements that only need to have their inner text set to the correct value)
@@ -284,15 +283,28 @@ if (recipe) {
   elImage.setAttribute('src', recipe.image);
   elImage.setAttribute('alt', recipe.title);
 
+  // We fill the 'Other Recipes in this category' section with data.
+  //
+  // Because it's quite a lot of places where we need to adjust the data, we will just write
+  // the HTML 'manually' in a string for now. This approach would be harder to maintain in the
+  // long run though, because it makes it more complicated to make adjustments to the page
+  // if needed.
   function injectRecipeLinks(category, slug) {
+    // We filter our data to get only the items of the desired category. Then we filter out
+    // the recipe, we're currently looking at.
     const categoryRecipes = recipes.filter(
       (item) => item.category === category
     );
     const otherRecipes = categoryRecipes.filter((item) => item.slug !== slug);
 
+    // We switch out the Headline of the section.
     elRecipeHeadlines = document.getElementById('recipes-headline');
     elRecipeHeadlines.innerHTML = `Other Recipes in ${category}`;
 
+    //
+    // RULE NUMBER ONE OF WRITING ALL THE HTML AS A TEMPLATE STRING:
+    // WE DO NOT TALK ABOUT WRITING ALL THE HTML AS A TEMPLATE STRING.
+    //
     const otherRecipesHTML = `
     <div class="col-md">
           <div
@@ -314,11 +326,11 @@ if (recipe) {
                   class="rounded img img-responsive full-width"
                 />
                 <div class="middle">
-                  <i class="fas fa-clock solid"> 15 min</i>
+                  <i class="fas fa-clock solid"></i> 15 min
                   <br />
-                  <i class="fas fa-smile solid"> Easy</i>
+                  <i class="fas fa-smile solid"></i> Easy
                   <br />
-                  <i class="fas fa-fire-alt solid"> Calories</i>
+                  <i class="fas fa-fire-alt solid"></i> 290
                 </div>
               </div>
               <p class="card-text">
@@ -361,11 +373,11 @@ if (recipe) {
                   class="rounded img img-responsive full-width"
                 />
                 <div class="middle">
-                  <i class="fas fa-clock solid"> 15 min</i>
+                  <i class="fas fa-clock solid"></i> 15 min
                   <br />
-                  <i class="fas fa-smile solid"> Easy</i>
+                  <i class="fas fa-smile solid"></i> Easy
                   <br />
-                  <i class="fas fa-fire-alt solid"> Calories</i>
+                  <i class="fas fa-fire-alt solid"></i> 290
                 </div>
               </div>
               <p class="card-text">
@@ -394,9 +406,10 @@ if (recipe) {
     elOtherRecipes.innerHTML = otherRecipesHTML;
   }
 
-  // Next, we do the navigation. We want to highlight the button that relates
-  // to the category we are looking at right now. So we need to go through
-  // the possible values and then apply the "active"-class when we find a match.
+  // We do two things at once now: Call the function we just defined to
+  // fill the 'Other Recipes'-section and also update the navigation to
+  // highlight the button that relates to the category we are looking at
+  // right now.
   switch (recipe.category) {
     case 'Antipasto':
       navAntipasto.classList.add('active');
@@ -415,27 +428,29 @@ if (recipe) {
       injectRecipeLinks('Dolce', recipe.slug);
       break;
     default:
-    // do nothing
+    // take a break, read a book, do work & travel in australia
   }
 
-  // Finally, we need to generate the ingredients list
-  // First we define a function that appends a list item to the list on the page.
-  // As arguments, it needs an ingredient description and the amount
+  // We also need to generate the ingredients list. The container element is already
+  // on the page. We define a function that appends a list item to it for every ingredient.
+  // As arguments, it needs an ingredient title and the amount.
   function generateIngredientItem(ingredient, amount) {
     // Create the element & apply the necessary classes
     const elIngredient = document.createElement('li');
     elIngredient.className =
       'list-group-item d-flex justify-content-between align-items-center';
 
-    // Create another element for the amount & apply classes
+    // Create another element for the amount & apply classes to it.
     const elAmount = document.createElement('span');
     elAmount.className = 'badge badge-secondary badge-pill';
 
+    // We're shooting for this: <li>Ingredient Name<span>Amound</span></li>
     // Since the amount is nested inside of the ingredient element, we first
     // set the innerHTML of the amount
     elAmount.innerHTML = amount;
 
-    // Next, we set the innerHTML of the ingredient element and append the amount element
+    // Next, we set the innerHTML of the ingredient element to the title and
+    // append the amount element.
     elIngredient.innerHTML = ingredient;
     elIngredient.appendChild(elAmount);
 
@@ -450,6 +465,11 @@ if (recipe) {
 
   // Below the ingredients list, we want to add the Share button with the correct slug as an argument.
   const elShareButton = document.getElementById('share-container');
+
+  //
+  // RULE NUMBER TWO OF WRITING ALL THE HTML AS A TEMPLATE STRING:
+  // WE DO NOT TALK ABOUT WRITING ALL THE HTML AS A TEMPLATE STRING.
+  //
   const shareButtonHTML = `
   <button
     type="button"
@@ -460,6 +480,6 @@ if (recipe) {
   </button>`;
   elShareButton.innerHTML = shareButtonHTML;
 } else {
-  // This code block will run, if the param in the URL isn't found on the recipe data array
+  // Error 404: This code block will run, if the param in the URL isn't found on the recipe data array.
   elHeadline.innerHTML = 'Error 404: Page not found :(';
 }
