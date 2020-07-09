@@ -1,155 +1,203 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 
 /*
  * RECIPE: CONTAINER FOR MAIN CONTENT 
  */
+
 .cb-main-container {
-  max-width: 650px;
-  margin: 0 auto;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .cb-table-container {
-  max-width: 400px;
-  margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto;
 }
+
 
 /* 
  *  HIDE CLASS FOR JS STUFF (MODAL AND VIEW TOGGLE)
  */
+
 .hide {
-  display: none;
+    display: none;
 }
+
 
 /*
  *  INDEX: SVG BACKGROUND (KITCHEN) 
  */
+
 .background-svg {
-  background: url('kitchen.svg') no-repeat;
-  background-size: 500px;
-  opacity: 0.2;
-  position: fixed;
-  width: 500px;
-  height: 500px;
-  z-index: -100;
-  bottom: 0;
-  right: 50px;
+    background: url('kitchen.svg') no-repeat;
+    background-size: 500px;
+    opacity: 0.2;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    z-index: -100;
+    bottom: 0;
+    right: 50px;
 }
 
 @media only screen and (max-width: 770px) {
-  .background-svg {
-    display: none;
-  }
+    .background-svg {
+        display: none;
+    }
 }
+
 
 /* 
  *  HEADER
  */
+
 .header-svg {
-  margin-right: 10px;
+    margin-right: 10px;
 }
+
 
 /*
  *  RECIPE CARDS (GRID) 
  */
+
 .image {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
 }
 
 .image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .middle i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .image:hover .img {
-  opacity: 0.3;
+    opacity: 0.3;
 }
 
 .image:hover .middle {
-  opacity: 1;
-  color: black;
+    opacity: 1;
+    color: black;
 }
+
 
 /*
  *  RECIPE CARDS (GRID) 
  */
+
 .image-list {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .image-list img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s;
 }
 
 .image-list:hover img {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .line-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
+
+/* 
+ *  BACK TO TOP ARROW
+ */
+
+#myBtn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #78C2AD;
+    color: white;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 3px #00000022, 1px 2px 9px #00000022;
+}
+
+#myBtn:hover {
+    background-color: #629e8d;
+}
+
+@media only screen and (max-width: 500px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
 
 /* 
  *  MODAL CLASSES
  */
 
 .cb-modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10000;
 }
 
 .cb-modal-wrapper {
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.cb-modal-networks > * + * {
-  margin-left: 8px;
+.cb-modal-networks>*+* {
+    margin-left: 8px;
 }
 
 .cb-modal-networks i {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .cb-modal-networks i:hover {
-  color: #78c2ad;
+    color: #78c2ad;
 }
