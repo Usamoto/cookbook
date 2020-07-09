@@ -1,10 +1,16 @@
+//
+//  This file contains all the logic needed to toggle the index view between
+//  grid view and list view. It does that through toggling the 'hide' class
+//  on the appropriate elements on the page. We also swap out the links on the
+//  Navbar, so they will connect to the elements that are actually visible on
+//  the page. The code should be self-explanatory.
+//
+
 function toggleGridView() {
   const gridElement = document.getElementById('grid-view');
   const listElement = document.getElementById('list-view');
-  if (gridElement.classList.contains('hide'))
-    gridElement.classList.remove('hide');
-  if (!listElement.classList.contains('hide'))
-    listElement.classList.add('hide');
+  gridElement.classList.remove('hide');
+  listElement.classList.add('hide');
 
   document
     .getElementById('navlink-antipasto')
@@ -17,10 +23,8 @@ function toggleGridView() {
 function toggleListView() {
   const listElement = document.getElementById('list-view');
   const gridElement = document.getElementById('grid-view');
-  if (listElement.classList.contains('hide'))
-    listElement.classList.remove('hide');
-  if (!gridElement.classList.contains('hide'))
-    gridElement.classList.add('hide');
+  listElement.classList.remove('hide');
+  gridElement.classList.add('hide');
 
   document
     .getElementById('navlink-antipasto')
